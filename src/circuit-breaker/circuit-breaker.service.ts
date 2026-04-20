@@ -27,6 +27,9 @@ export class CircuitBreakerService {
       ...options,
     };
 
+
+    
+
     const breaker = new CircuitBreaker(action, defaultOptions);
 
     breaker.fallback(() => {

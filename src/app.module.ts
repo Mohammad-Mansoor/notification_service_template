@@ -13,12 +13,14 @@ import { EmailModule } from './modules/email/email.module';
 import { WhatsappModule } from './modules/whatsapp/whatsapp.module';
 import { TelegramModule } from './modules/telegram/telegram.module';
 import { InAppModule } from './modules/inapp/inapp.module';
+import { SocketModule } from './modules/socket/socket.module';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true, envFilePath: '.env' }),
     
     AppRabbitMQModule,
+    SocketModule,
 
     ObservabilityModule,
     IdempotencyModule,

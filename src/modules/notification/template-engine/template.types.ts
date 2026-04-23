@@ -12,6 +12,7 @@ export enum TemplateEventType {
   // New event types added for additional email scenarios
   USER_REGISTERED = 'USER_REGISTERED',
   PASSWORD_RESET_REQUEST = 'PASSWORD_RESET_REQUEST',
+  FORGOT_PASSWORD = 'FORGOT_PASSWORD',
   NEW_DEVICE_LOGIN = 'NEW_DEVICE_LOGIN',
   // Add future event types here
 }

@@ -37,6 +37,17 @@ export class TemplateRegistryResolver {
             'email/auth/otp/otp.subject.hbs',
           ),
         };
+      case TemplateEventType.FORGOT_PASSWORD:
+        return {
+          htmlPath: path.resolve(
+            this.templatesBase,
+            'email/auth/otp/otp.html.hbs',
+          ),
+          subjectPath: path.resolve(
+            this.templatesBase,
+            'email/auth/otp/otp.subject.hbs',
+          ),
+        };
       case TemplateEventType.PASSWORD_RESET:
         return {
           htmlPath: path.resolve(
